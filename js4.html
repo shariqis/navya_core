@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+
+        var a=7;
+        var p=0;
+        for (var i=2;i<a;i++){
+            if(a%i==0)
+            {
+                p=1
+                break
+            }            
+        }
+        if(p==0)
+        {
+            document.write('it is  prime')
+        }
+        else{
+            document.write('it is  not prime')
+        }
+            
+        
+    </script> -->
+
+
+
+    <!-- 
+    <script>
+        var start = 9;
+        var stop = 45;
+
+        for(var num=start;num<=stop;num++)
+        {            
+            var p=0;
+            for(var i=2;i<num;i++)
+            {
+                if(num%i==0)
+                {
+                    p=1;
+                    break
+                }
+
+            }
+
+            if(p==0){
+                document.write('<h1>'+ num+ '</h1>')
+            }
+        }
+
+
+
+
+
+    </script> -->
+
+    <!-- <script>
+        //alert('hello');
+
+        var x;
+
+        if(confirm("do you wnt to delete ??")==true)
+        {
+            document.write('deleted')
+        }
+        else{
+            document.write('npooooooooooooooooooooooo')
+        }
+
+    </script> -->
+
+
+    <!-- <script>
+
+var name=prompt("enter ur name ",'ammu');
+console.log(name)
+if (name!="null" && name!="")
+{
+    document.write('my name is ' + name)
+}
+else{
+    document.write('no value')
+}
+
+
+
+    </script> -->
+
+    <button onclick="add(2,8)">add</button>
+    <h1 id="n">welcome</h1>
+
+
+    <script>
+        function add(a,b) {
+           // console.log(a+b)
+           document.getElementById('n').innerHTML=a+b;
+        }
+
+  
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

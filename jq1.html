@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jslib.js"></script>
+    <style>
+        #r,
+        #s {
+            background-color: chartreuse;
+            padding: 5px;
+            border: solid 2px red;
+        }
+
+
+        #s {
+            padding: 50px;
+        }
+    </style>
+    <!-- display: none; -->
+
+</head>
+
+<body>
+    <!-- <h1 class="k">welcome</h1>
+    <h1 class="k">haii</h1>
+    <p id="m">hello</p>
+    <input type="text">
+
+    <button>click</button>
+    <script>
+        $(document).ready(function () {
+            //$("h1").hide();
+            $("button").click(function () {
+                //   $(this).hide();
+                //  $("h1").hide()
+                //  $("#m").hide()
+                $(".k").hide()
+
+            });
+            $("input").focus(function(){
+                $(this).css("background-color",'red')
+            })
+
+        });
+    </script> -->
+
+
+    <!-- <p style="display: none;">welcome</p>
+    <button id="h">Hide</button>
+    <button id="s">Show</button>
+    <button id="t">Toggle</button>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#h").click(function () {
+                $("p").hide()
+            });
+
+            $("#s").click(function () {
+                $("p").show()
+            });
+
+            $("#t").click(function () {
+                $("p").toggle()
+            })
+
+        });
+    </script> -->
+
+
+    <!-- <button id="out">fade OUT</button>
+    <button id="in">fade IN</button>
+    <button id="tog">fade Toggle</button>
+    <button id="to">fade To</button>
+    <hr>
+
+    <div id="d1" style="background-color: red;width: 100px;height: 100px;"></div>
+    <hr>
+    <div id="d2" style="background-color: red;width: 100px;height: 100px;"></div>
+    <hr>
+    <div id="d3" style="background-color: red;width: 100px;height: 100px;"></div>
+    <hr>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#out").click(function () {
+
+                $("#d1").fadeOut();
+                $("#d2").fadeOut("slow");
+                $("#d3").fadeOut(3000);
+
+            });
+            $("#in").click(function () {
+
+                $("#d1").fadeIn();
+                $("#d2").fadeIn("slow");
+                $("#d3").fadeIn(3000);
+
+            })
+            $("#tog").click(function () {
+
+                $("#d1").fadeToggle();
+                $("#d2").fadeToggle("slow");
+                $("#d3").fadeToggle(3000);
+
+            })
+            $("#to").click(function () {
+
+                $("#d1").fadeTo("slow",.1);
+                $("#d2").fadeTo("slow",.6);
+                $("#d3").fadeTo(3000,.8);
+
+            })
+
+        });
+    </script> -->
+
+
+    <!-- <p style="background-color: brown;">welcome</p>
+
+    <script>
+
+        $(document).ready(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        })
+    </script> -->
+
+    <button>stop</button>
+    <div id="r">Read more </div>
+    <div id="s">hello---------------------</div>
+
+    <script>
+        $(document).ready(function () {
+            $("#r").click(function () {
+                //  $("#s").slideDown(2000)
+                // $("#s").slideUp(2000)
+                $("#s").slideToggle(2000)
+            });
+
+            $("button").click(function () {
+                $("#s").stop()
+
+            })
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

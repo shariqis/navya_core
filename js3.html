@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.b{
+    background-color: black;
+
+}
+
+    </style>
+</head>
+<body>
+
+
+
+  <table border="2px" width="250px" height="250px">
+ 
+    <script>
+        for(var a=1;a<=8;a++){
+            document.write('<tr>')
+                for(var b=1;b<=8;b++)
+                {
+                    if((a+b)%2==0)
+                    {
+                        document.write('<td class="b"></td>')
+                    }
+                    else{
+                        document.write('<td></td>')
+                    }
+                    
+                }
+           
+          
+            document.write('</tr>')
+        }
+    </script>
+  </table>
+    
+</body>
+</html>

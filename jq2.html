@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jslib.js"></script>
+</head>
+
+<body>
+    <!-- <button>Animate</button>
+    <div style="background-color: red;width: 100px; height: 100px;position: absolute;"></div> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+             //   $("div").animate({ left: '250px',width:'+=200px' },"slow")
+             var div = $("div");
+             div.animate({height: '300px', opacity: '0.4'}, "slow");
+             div.animate({width: '300px', opacity: '0.8'}, "slow");
+             div.animate({height: '100px', opacity: '0.4'}, "slow");
+             div.animate({width: '100px', opacity: '0.8'}, "slow")
+            })
+
+        });
+    </script> -->
+    <!-- $("button").click(function () {
+        $("p").hide(3000, function () {
+            alert('my paragraph is hidden')
+        });
+
+    }) -->
+
+    <!-- <p>hello</p>
+    <button>click</button>
+    <script>
+        $(document).ready(function () {
+            
+            $("button").click(function(){
+
+                $("p").css("color","red").slideUp(2000).slideDown(3000)
+            })
+
+        });
+    </script> -->
+
+
+
+    <!-- <p>welcome to <b>qis</b> </p>
+    <input id="i" type="text" value="welcome" >
+    <button id="t">Text</button>
+    <button id="h">html</button>
+    <button id="v">val</button>
+    <button id="a">atter</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#t").click(function () {
+             //   var c = $("p").text()
+             //   alert(c)
+             $("p").text("app<b>u</b>")
+            })
+            $("#h").click(function () {
+                //var c = $("p").html()
+               // alert(c)
+               $("p").html("app<b>u</b>")
+            })
+            $("#v").click(function () {
+               // var c = $("#i").val()
+              //  alert(c)
+              $("#i").val("kiran")
+            })
+            $("#a").click(function () {
+             //   var c = $("#i").attr("id")
+             //   alert(c)
+             $("#i").attr("id","date")
+            })
+
+        })
+    </script> -->
+    <p>welcome</p>
+    <button id="app">append</button>
+    <button id="pre">prepend</button>
+    <button id="af">after</button>
+    <button id="bf">before</button>
+    <button id="em">empty</button>
+    <button id="re">remove</button>
+
+    <div style="height: 200px; background-color: aquamarine;">
+        <p>hhhhhhhhhhhhhhhh</p>
+        <h1>nnnnnnnnnnnnnnnnnnnnnnnn</h1>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#app").click(function () {
+                $("p").append("<b>hii</b>")
+            })
+            $("#pre").click(function () {
+                $("p").prepend("<b>hii</b>")
+            })
+            $("#af").click(function () {
+                $("p").after("<b>hii</b>")
+            })
+            $("#bf").click(function () {
+                $("p").before("<b>hii</b>")
+            })
+            $("#em").click(function () {
+                $("div").empty()
+            })
+            $("#re").click(function () {
+                $("div").remove()
+            })
+
+        })
+    </script>
+
+
+</body>
+
+</html>
